@@ -16,7 +16,6 @@ apps=(
 	cheese
 	vlc
 	simplescreenrecorder
-	ppa:obsproject/obs-studio
 	obs-studio
 	ffmpeg
 	tcpdump
@@ -61,13 +60,6 @@ check_status() {
 	fi	
 }
 
-#installing seven-square. phone mirror app
-seven_square_install() {
-	sudo apt-get install -y android-tools-adb qt4-qmake libqt4-dev libqtcore4 libqtgui4
-	cd;wget https://github.com/yangh/sevensquare/archive/master.zip
-	unzip master.zip;cd sevensquare-master; sudo make
-	sudo make install;cd;rm -rf sevensquare-master master.zip
-}
 
 ###############
 #    MAIN     #		
@@ -75,7 +67,6 @@ seven_square_install() {
 
 update_upgrade
 install_apps
-seven_square_install
 
 #END
 
