@@ -15,7 +15,6 @@ apps=(
 	kazam
 	cheese
 	vlc
-	ppa:maarten-baert/simplescreenrecorder
 	simplescreenrecorder
 	ppa:obsproject/obs-studio
 	obs-studio
