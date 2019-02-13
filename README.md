@@ -1,2 +1,2 @@
 # ubuntu-package-installer
-# here you can see what apps I use!!!!
+# this is script automate the process of installing applicaiton in ubuntu system. 
