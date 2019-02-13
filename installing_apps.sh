@@ -4,29 +4,14 @@
 #date: 4/6/2017
 
 #array containing all apps to be reinstalled
-apps=(
-	gimp
-	dia
-	darktable
-	chromium-browser
-	wireshark
-	libreoffice
-	kdenlive
-	kazam
-	cheese
-	vlc
-	simplescreenrecorder
-	obs-studio
-	ffmpeg
-	tcpdump
-	atom
-	eclipse
-	g++
-	audacity
-	ubuntu-restricted-extras
-	inkscape
-	git
-	)
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $(basename $0) [ listFile ]"
+    exit -1
+fi
+
+#making an array of listFile which is first argument
+apps=($(cat $1))
 
 
 #update and upgrade system
